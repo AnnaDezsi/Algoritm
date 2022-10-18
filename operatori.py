@@ -49,6 +49,23 @@ def arie():
         b = input()
         print("c2=", b)
         print("aria=c1*c2/2 ->", int(a) * int(b) / 2)
+def ariePatrat():
+        print("AriePatrat")
+        print("Introduceti latura patratului")
+        a = input()
+        print("a=", a)
+        print("ariePatrat=a**2 ->",  int(a)**2)
+
+def arieDreptunghi():
+        print("ArieDreptunghi")
+        print("Introduceti prima latura")
+        a = input()
+        print("a=", a)
+        print("Introduceti a doua latura")
+        b = input()
+        print("b=", b)
+        print("arieDreptunghi=a * b  ->", int(a) * int(b))
+
 
 
 
@@ -60,5 +77,7 @@ if __name__ == '__main__':
     inmultire()
     impartire()
     arie()
+    ariePatrat()
+    arieDreptunghi()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
