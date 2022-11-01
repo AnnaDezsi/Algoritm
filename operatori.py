@@ -68,16 +68,15 @@ def arieDreptunghi():
 
 
 
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    suma()
-    scadere()
-    inmultire()
-    impartire()
-    arie()
-    ariePatrat()
-    arieDreptunghi()
+    print("10%2 ->", 10%2)
+    # suma()
+    # scadere()
+    # inmultire()
+    # impartire()
+    # arie()
+    # ariePatrat()
+    # arieDreptunghi()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
