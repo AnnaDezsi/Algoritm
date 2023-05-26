@@ -94,36 +94,44 @@ def impartire():
 def meniu():
     print("Apasati 1 pt adunare, 2 pentru scadere, 3 pt inmultire, 4 pt impartire, 5 pentru incadrare, 6 pt sir ")
     option = input().strip() #elimina spatiile de la inceput sau sfarsit daca ele exista
-    if option == "1":
-        print("adunare")
-        adunare()
-    else:
-        if option == "2":
+    # if option == "1":
+    #     print("adunare")
+    #     adunare()
+    # else:
+    #     if option == "2":
+    #         print("scadere")
+    #         scadere()
+    #     else:
+    #         if option == "3":
+    #             print("inmultire")
+    #             inmultire()
+    #         else:
+    #             if option == "4":
+    #                 print("impartire")
+    #                 impartire()
+    #             else:
+    #                 if option == "5":
+    #                     print("incadrare")
+    #                     incadrare()
+    #                 else:
+    #                     if option == "6":
+    #                         print("sir")
+    #                         sir5()
+    #                     else:
+    #                         if option == "7":
+    #                             print("sir")
+    #                             lista5()
+    #                         else:
+    #                             print("Optiunile disponibile sunt 1, 2, 3, 4, 5, 6, 7")
+    match option:
+        case '1':
+            print("adunare")
+            adunare()
+        case '2':
             print("scadere")
             scadere()
-        else:
-            if option == "3":
-                print("inmultire")
-                inmultire()
-            else:
-                if option == "4":
-                    print("impartire")
-                    impartire()
-                else:
-                    if option == "5":
-                        print("incadrare")
-                        incadrare()
-                    else:
-                        if option == "6":
-                            print("sir")
-                            sir5()
-                        else:
-                            if option == "7":
-                                print("sir")
-                                lista5()
-                            else:
-                                print("Optiunile disponibile sunt 1, 2, 3, 4, 5, 6, 7")
-
+        case _:
+            print('Nu exista')
 
 
 
@@ -137,4 +145,4 @@ if __name__ == "__main__":
     #     meniu()
     #     print("Pentru iesire tastati 0 sau orice alta tasta pt continuare")
     #     exit = input().strip()
-    fib()
+    meniu()
